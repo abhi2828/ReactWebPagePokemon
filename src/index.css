@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+  background-color: #d9d7d8;
+}
+.container-fluid{
+  background-color: #ffffff;
+  margin: 15px 0;
+}
+figure {
+    /* width: 300px; */
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 200px;
+}
+figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+img {
+       width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+.heading{
+  border-radius: 5px;
+}
+p.AboutPokemon{
+  color:#696d71 ;
+}
+.card{
+  height:432px;
+}
+.cardContent{
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  height: 231px;
+  padding: 15px;
+  text-align: center !important;
+}
+
+button {
+    margin-bottom: 15px;
+}
+.padding{
+  padding: 15px;
+}
+.col-md-12 {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.col-md-12 h2{
+  text-align: center !important;
+}
+
+/* footer code */
+
+ul {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+  margin: 0 5px;
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #262626;
+  transition: .5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+ul li:nth-child(4) a:before {
+  background: #262626;
+}
+footer{
+  margin: 0 30px !important;
+}
+@media screen and (max-width: 992px){
+  .container{
+    padding: 0 15px;
+    
+  }
+  .col-md-4{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  p.AboutPokemon {
+    color: #5f6163;
+    line-height: 1;
+    font-weight: 300;
+}
+}
+@media screen and (max-width: 767px){
+  .container{
+    padding: 0 15px;
+  }
+}
